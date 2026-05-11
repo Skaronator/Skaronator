@@ -14,6 +14,7 @@ jobs:
       - uses: lowlighter/metrics@master
         with:
           config_timezone: Europe/Berlin
+          token: ${{ secrets.METRICS_TOKEN }}
           retries: 3
           retries_delay: 300
           config_display: large
