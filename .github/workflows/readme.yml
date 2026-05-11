@@ -15,15 +15,10 @@ jobs:
         with:
           config_timezone: Europe/Berlin
           token: ${{ secrets.METRICS_TOKEN }}
-          retries: 3
-          retries_delay: 300
-          config_display: large
           plugin_introduction: true
           plugin_languages: true
           plugin_languages_details: percentage
           plugin_languages_limit: 10
-          plugin_lines: true
-          plugin_lines_sections: base, repositories
           plugin_contributors: true
           plugin_contributors_contributions: true
           plugin_sponsorships: true
