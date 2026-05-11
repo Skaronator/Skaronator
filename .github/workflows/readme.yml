@@ -15,6 +15,7 @@ jobs:
         with:
           config_timezone: Europe/Berlin
           token: ${{ secrets.METRICS_TOKEN }}
+          base: header, activity, community, repositories
           plugin_introduction: true
           plugin_languages: true
           plugin_languages_details: percentage
@@ -22,3 +23,5 @@ jobs:
           plugin_contributors: true
           plugin_contributors_contributions: true
           plugin_sponsorships: true
+          plugin_reactions: true
+          plugin_reactions_details: count
